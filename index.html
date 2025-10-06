@@ -3,37 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>My Free Landing Page</title>
-  <meta name="description" content="A short summary of your page for search and social media.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Find Your Dream Home | Real Estate Landing Page</title>
+  <meta name="description" content="Browse exclusive real estate listings and connect with our trusted agents.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body{font-family:system-ui,sans-serif;background:#f9fafb}
-    .hero{padding:6rem 1rem;text-align:center}
-    .btn-main{padding:.75rem 1.25rem;font-weight:600}
+    body{font-family:system-ui,sans-serif;background:#f8f9fa;}
+    .hero{background:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+          color:#fff;padding:6rem 1rem;text-align:center;}
+    .hero h1{font-weight:700;text-shadow:0 2px 8px rgba(0,0,0,0.5);}
+    .overlay{background:rgba(0,0,0,0.55);padding:4rem 1rem;border-radius:1rem;}
+    .card img{border-radius:.75rem .75rem 0 0;}
   </style>
 </head>
 <body>
-  <section class="hero">
-    <div class="container">
-      <h1 class="display-5 fw-bold mb-3">Get My Free Productivity Playbook</h1>
-      <p class="lead mb-4 text-muted">Simple steps to work smarter and save 5+ hours per week.</p>
-      <a href="#signup" class="btn btn-primary btn-main">Get the Free Guide</a>
+  <header class="hero">
+    <div class="overlay container">
+      <h1>Find Your Dream Home in [Your City]</h1>
+      <p class="lead mb-4">Exclusive listings, local expertise, and personalized service.</p>
+      <a href="#contact" class="btn btn-light btn-lg">Get Free Property List</a>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Featured Listings</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a97b5dfd0?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5>Modern Family Home</h5>
+              <p class="text-muted">$420,000 · 4 Beds · 3 Baths</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5>Luxury Condo Downtown</h5>
+              <p class="text-muted">$560,000 · 2 Beds · 2 Baths</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5>Cozy Suburban Cottage</h5>
+              <p class="text-muted">$310,000 · 3 Beds · 2 Baths</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="py-5" id="signup">
+  <section id="contact" class="py-5 bg-light">
     <div class="container text-center">
-      <h3>Sign up to receive it</h3>
-      <form action="https://formspree.io/f/your-id" method="POST" class="mt-3" style="max-width:400px;margin:auto;">
-        <input name="email" type="email" class="form-control mb-2" placeholder="Your email address" required>
-        <button class="btn btn-primary w-100" type="submit">Send it to me →</button>
+      <h3>Request More Info</h3>
+      <p class="text-muted mb-4">Get a free list of available properties and market insights.</p>
+      <form action="https://formspree.io/f/your-id" method="POST" style="max-width:420px;margin:auto;">
+        <input type="text" name="name" class="form-control mb-2" placeholder="Your name" required>
+        <input type="email" name="email" class="form-control mb-2" placeholder="Your email" required>
+        <button class="btn btn-primary w-100" type="submit">Get My Property List →</button>
       </form>
-      <p class="text-muted small mt-2">No spam. Unsubscribe anytime.</p>
     </div>
   </section>
 
   <footer class="text-center py-4 small text-muted">
-    © 2025 Your Name
+    © 2025 [Your Agency Name] · <a href="#" class="text-decoration-none">Privacy</a>
   </footer>
 </body>
-  </html>
+          </html>
